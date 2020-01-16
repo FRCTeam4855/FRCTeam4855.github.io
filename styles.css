@@ -62,9 +62,10 @@ nav ul {
 }
 nav ul li {
 	display: inline-block;
-	margin: 0 56px;
+	margin: 0 5%;
 	text-align: center;
 	font-size: 125%;
+	width: 100px;
 }
 article {
 	margin: 60px 0;
@@ -72,6 +73,12 @@ article {
 }
 #titleRam {
 	width: 100px;
+	margin: auto;
+	display: block;
+	height: auto;
+}
+#powerCell {
+	width: 150px;
 	margin: auto;
 	display: block;
 	height: auto;
@@ -90,12 +97,12 @@ article {
 	display: inline-block;
 	margin: 20px 8px;
 }
-#buttonList, .buttonList {
+.buttonList {
 	text-align: center;
 	margin-top: 32px;
 	font-size: 120%;
 }
-#buttonList a, .buttonList a {
+.buttonList a {
 	background-color: #764BA3;
 	color: white;
 	display: inline-block;
@@ -103,6 +110,19 @@ article {
 	padding: 12px;
 	text-decoration: none;
 }
-#buttonList a:hover, .buttonList a:hover {
+.buttonList a:hover {
 	background-color: #9f7cc3;
+}
+
+@media screen and (max-width: 476px) {
+	nav ul li {
+		width: 100%;
+		margin: 15px 0;
+	}
+	nav {
+		margin: 6px auto 40px;
+	}
+	body {
+		padding-top: 10px;
+	}
 }
