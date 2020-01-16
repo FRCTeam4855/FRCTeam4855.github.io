@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>4855 Scouter</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="download.html">Download</a></li>
+			</ul>
+		</nav>
+		<header>
+			<h1>About</h1>
+			<img id="titleRam" src="ramageddonlogopurple.png" alt="logo"/>
+		</header>
+		<main>
+			<article>
+				<h2>Philosophy</h2>
+				<p>
+					My philosophy when creating the 4855 Scouter is to stay committed to making scouting as accessible, simple, and efficient as possible. I come from a background of
+					messy and disorganized Google spreadsheets full of confusing, conditionally formatted cells, scouting structures with no accountability, and large quantities of
+					papers full of copious notes that end up going completely unused.
+				</p>
+				<p>
+					The 4855 Scouter makes the most of all the information given to it. As a driver myself, I know what kind of data helps make gameplan decisions, so the match simulator 
+					was made in such a way to maximize every available piece of information and make it viewable at a glance. Every scouting sheet also has names attached to it, so scouters 
+					can easily be held accountable for not carrying their weight or rewarded for exceptional data.
+				</p>
+				<p>
+					Accessibility is no longer an issue, as not only is the scouter flexible to any device no matter the availability of internet, but it's easy for rookies to catch on fast. 
+					Each scouting form can be boiled down to the number of game pieces processed during a match, if a team initiated any defensive efforts, 
+					and how well a team climbed.
+				</p>
+			</article>
+			<article>
+				<h2>What it's made of</h2>
+				<p>
+					The 4855 Scouter was written in HTML, CSS, and JavaScript. The system uses a browser's localStorage space to hold scouting forms, and forms are exported in .JSON format. 
+					The .JSON files can be named whatever you wish if you want to organize your data. Even if a file has forms in it that are duplicate in another file, those files will not be
+					duplicated when imported into the system.
+				</p>
+			</article>
+			<article>
+				<h2>Key features</h2>
+				<p>
+					Standard scouters and lead scouters can make <strong>match forms</strong> or <strong>verbal forms</strong>. A match form is data recorded during a specific match on stats such
+					stats such as how many game pieces a team cycled and whether or not a team climbed. Verbal forms contain data collected by approaching teams and asking them for info. To avoid
+					unnecessary complexity and collection of unneeded data, we minimized the number of questions asked on these forms, simply asking only the core questions we can't necessarily collect during
+					matchplay alone (i.e. robot weight, drivetrain, defensive capability).
+				</p>
+				<p>
+					When a scouter is ready to send any number of their scouting forms to the lead scouter, they can click a button which will download a JSON file to their device. This data must then
+					be transfered to the lead scouter's scouter program (via network switch, USB flash drive, Bluetooth, snail mail, owl, etc.) where they import the data to their database to view
+					every team's form side-by-side.
+				</p>
+				<p>
+					Once the lead scouter has their hands on the data, they now have powerful analytical tools at their fingertips. Every team receives a calculated rating known as an RPI (Ramageddon Power Index)
+					much like an offensive power rating. Teams can be ranked by and evaluated at a glance by their RPI. In addition, the 4855 Scouter has a match simulator which predicts a full scoring breakdown,
+					ranking point breakdown, the defense likely to be played from either alliance, and insights on which stats will be the turning point in every match. The 4855 Scouter can also generate a playoff
+					pick list, allowing scouters to eliminate chosen teams and rank all teams by what they're looking for in an alliance partner such as offensive or defensive abilities.
+				</p>
+			</article>
+			<article>
+				<h2>Drawback</h2>
+				<p>
+					Unfortunately, one of the hurdles that I have encountered while creating the 4855 Scouter is pulling team names from team numbers. It is not imperitive to the function of the
+					program but, regardless, it is a feature that should be expected of the scouter. Due to its inability to process PHP code, access files on the local hard drive, or pull team names from The Blue Alliance,
+					getting team names is a difficult task. Currently, I have some team name-number pairs hard coded into a JavaScript file of those teams that Ramageddon will be competing against at our
+					two district events, as well as a few other random teams from around the state of Michigan. It isn't difficult for users to add team name-number pairs to this file, but at this time I
+					am unable to develop a solution to this issue.
+				</p>
+				<p>
+					Team numbers with unknown names are displayed as three question marks ??? in the scouter. If someone thinks they can find a solution that aligns with an independence from an internet connection (while
+					also not requiring the user to manually upload files containing every single name-number pair), they are more than welcome to <a href="https://github.com/FRCTeam4855/4855scout">fork the GitHub repo</a>.
+				</p>
+			</article>
+		</main>
+	</body>
+</html>
